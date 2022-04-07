@@ -1,0 +1,244 @@
+import React from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { reportActions } from "../../store/reportSlice";
+import Score from "../score";
+import moment from "moment";
+export default function Index() {
+  const dispatch = useDispatch();
+  const addReport = (event) => {
+    event.preventDefault();
+    const json = {
+      timestamp: moment().format("DD MMMM YYYY HH:mm:ss"),
+      tglPeriksa: moment(event.target.tglPeriksa.value).format(
+        "DD MMMM YYYY HH:mm:ss"
+      ),
+      tglLahir: moment(event.target.tglLahir.value).format("DD MMMM YYYY"),
+      tglInfus: moment(event.target.tglInfus.value).format(
+        "DD MMMM YYYY HH:mm:ss"
+      ),
+      name: event.target.name.value,
+      gender: event.target.gender.value,
+      noRM: event.target.noRM.value,
+      opsi1: event.target.opsi1.checked,
+      opsi2: event.target.opsi2.checked,
+      opsi3: event.target.opsi3.checked,
+      opsi4: event.target.opsi4.checked,
+      opsi5: event.target.opsi5.checked,
+      opsi6: event.target.opsi6.checked,
+      opsi7: event.target.opsi7.checked,
+      opsi8: event.target.opsi8.checked,
+      opsi9: event.target.opsi9.checked,
+      opsi10: event.target.opsi10.checked,
+    };
+    dispatch(reportActions.addReport(json));
+  };
+  const reportList = useSelector((state) => state.report.reportList);
+  console.log(reportList);
+  const reset = (event) => {
+    dispatch(reportActions.reset());
+  };
+  return (
+    <>
+      <section className="py-10 shadow" id="survey">
+        <div className="sm:mx-auto sm:w-full sm:max-w-md">
+          <h2 className="mt-6 text-blue-700 text-center text-3xl font-extrabold ">
+            MULAI PENGUJIAN SKOR V.I.P
+          </h2>
+          <div className="mt-5 ml-10">
+            <h3 className="mb-3 text-lg font-semibold">Petunjuk Pengisian:</h3>
+            <p className="text-gray-500">
+              Pengkajian ini dilakukan oleh petugas berdasarkan gejala-gejala
+              yang tampak pada pasien saat ini. Perhatikanlah beberapa
+              pernyataan dibawah ini. Pilihlah pernyataan yang sesuai dengan
+              kondisi pasien.
+            </p>
+          </div>
+        </div>
+
+        <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
+          <div className="bg-white w-fit py-8 px-6 shadow rounded-lg sm:px-10">
+            <form className="mb-0 space-y-6" onSubmit={addReport} method="POST">
+              <div>
+                <div className="flex mt-1 ">
+                  <div>
+                    <label className="block text-lg font-medium text-gray-700 mb-2">
+                      Nama Pasien :
+                    </label>
+                    <input
+                      id="name"
+                      name="name"
+                      type="text"
+                      required
+                      className="border-solid p-1 border-2 border-indigo-600 rounded-md"
+                    />
+                  </div>
+                  <div className="ml-8">
+                    <label className="block text-lg font-medium text-gray-700 mb-2">
+                      Tanggal Pemeriksaan :
+                    </label>
+                    <input
+                      id="tglPeriksa"
+                      name="tglPerisksa"
+                      type="datetime-local"
+                      label="Tanggal Pemeriksaan"
+                      required
+                      className="border-solid p-1 px-8 text-gray-900 border-2 border-indigo-600 rounded-md"
+                    />
+                  </div>
+                </div>
+                <div className="flex mt-1 ">
+                  <div>
+                    <label className="block text-lg font-medium text-gray-700 mb-2">
+                      No. RM :
+                    </label>
+                    <input
+                      id="noRM"
+                      name="noRM"
+                      type="text"
+                      label="No. RM"
+                      required
+                      className="border-solid p-1 text-gray-900 border-2 border-indigo-600 rounded-md"
+                    />
+                  </div>
+                  <div className="ml-8">
+                    <label className="block text-lg font-medium text-gray-700 mb-2">
+                      Tanggal Lahir :
+                    </label>
+                    <input
+                      id="tglLahir"
+                      name="tglLahir"
+                      type="date"
+                      required
+                      className="border-solid p-1 px-8 border-2 border-indigo-600 rounded-md"
+                    />
+                  </div>
+                </div>
+                <div className="flex mt-1 ">
+                  <div>
+                    <label className="block text-lg font-medium text-gray-700 mb-2">
+                      Jenis Kelamin :
+                    </label>
+                    <input
+                      id="gender"
+                      name="gender"
+                      type="text"
+                      label="Jenis Kelamin"
+                      required
+                      className="border-solid p-1 text-gray-900 border-2 border-indigo-600 rounded-md"
+                    />
+                  </div>
+                  <div className="ml-8">
+                    <label className="block text-lg font-medium text-gray-700 mb-2">
+                      Tanggal Pemasangan Infus :
+                    </label>
+                    <input
+                      id="tglInfux"
+                      name="tglInfus"
+                      type="datetime-local"
+                      required
+                      className="border-solid p-1 px-8 border-2 border-indigo-600 rounded-md"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <label className="block text-xl font-semibold text-gray-700 ">
+                Pilih Penilaian dibawah ini :
+              </label>
+
+              <div className="flex items-center">
+                <input id="opsi1" name="opsi1" type="checkbox" className="" />
+                <label
+                  className="ml-2 block text-md text-gray-900"
+                  htmlFor="opsi1"
+                >
+                  (1) Tempat suntikan tampak sehat
+                </label>
+              </div>
+              <div className="flex items-center">
+                <input id="opsi2" name="opsi2" type="checkbox" className="" />
+                <label
+                  className="ml-2 block text-md text-gray-900"
+                  htmlFor="opsi2"
+                >
+                  (2) Sedikit nyeri dekat tempat suntikan (IV site)
+                </label>
+              </div>
+              <div className="flex items-center">
+                <input id="opsi3" name="opsi3" type="checkbox" className="" />
+                <label className="ml-2 block text-md text-gray-900">
+                  (3) Sedikit eritema/kemerahan pada tempat suntikan
+                </label>
+              </div>
+              <div className="flex items-center">
+                <input id="opsi4" name="opsi4" type="checkbox" className="" />
+                <label className="ml-2 block text-md text-gray-900">
+                  (4) Nyeri dekat IV site
+                </label>
+              </div>
+              <div className="flex items-center">
+                <input id="opsi5" name="opsi5" type="checkbox" className="" />
+                <label className="ml-2 block text-md text-gray-900">
+                  (5) Kemerahan
+                </label>
+              </div>
+              <div className="flex items-center">
+                <input id="opsi6" name="opsi6" type="checkbox" className="" />
+                <label className="ml-2 block text-md text-gray-900">
+                  (6) Bengkak
+                </label>
+              </div>
+              <div className="flex items-center">
+                <input id="opsi7" name="opsi7" type="checkbox" className="" />
+                <label className="ml-2 block text-md text-gray-900">
+                  (7) Nyeri di sepanjang kanul
+                </label>
+              </div>
+              <div className="flex items-center">
+                <input id="opsi8" name="opsi8" type="checkbox" className="" />
+                <label className="ml-2 block text-md text-gray-900">
+                  (8) Pengerasan (indurasi)
+                </label>
+              </div>
+              <div className="flex items-center">
+                <input id="opsi9" name="opsi9" type="checkbox" className="" />
+                <label className="ml-2 block text-md text-gray-900">
+                  (9) Vena cord teraba mengeras
+                </label>
+              </div>
+              <div className="flex items-center">
+                <input id="opsi10" name="opsi10" type="checkbox" className="" />
+                <label className="ml-2 block text-md text-gray-900">
+                  (10) Demam
+                </label>
+              </div>
+
+              <Score />
+
+              <div className="flex">
+                <div className="mt-5">
+                  <button
+                    type="submit"
+                    className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                  >
+                    Kirim Jawaban
+                  </button>
+                </div>
+
+                <div className="mt-5">
+                  <button
+                    onClick={reset}
+                    type="reset"
+                    className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-red-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 ml-10"
+                  >
+                    Ulangi Jawaban
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
