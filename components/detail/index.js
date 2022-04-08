@@ -2,7 +2,7 @@ import React from "react";
 import SectionTitle from "../SectionTitle";
 function index() {
   return (
-    <section className="py-28" id="detail">
+    <section className="py-16" id="detail">
       <div className="container mx-auto px-10 2xl:px-0">
         <SectionTitle>VIP (Visual Infusion Phlebitis) Score.</SectionTitle>
 
@@ -14,7 +14,7 @@ function index() {
             "
             />
           </div>
-          <div className="md:w-6/12 sm:w-7/12 w-full">
+          <div className="xs:w-full sm:w-fit md:w-6/12 ">
             <p className="text-base leading-relaxed font-semibold text-gray-700 italic">
               VIP Score merupakan skala visual plebitis yang digunakan untuk
               mendeteksi dini terjadinya plebitis dan penentuan yang tepat untuk
@@ -24,13 +24,17 @@ function index() {
               Rotherham, NHS Trustt.
             </p>
             <img
-              className="md:w-full items-stretch sm:w-7/12 w-full mt-4"
+              className="xs:hidden sm:flex sm:max-w-fit md:w-full lg:w-full mt-4"
               src="/assets/vipscore1.jpg"
             />
           </div>
           <div className="container"></div>
         </div>
       </div>
+      <img
+        className="px-10 sm:hidden md:hidden mt-4"
+        src="/assets/vipscore1.jpg"
+      />
     </section>
   );
 }

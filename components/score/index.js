@@ -2,14 +2,11 @@ import React from "react";
 import { useSelector } from "react-redux";
 export default function Index() {
   const dataScore = useSelector((state) => state.report.dataScore);
-
+  if (dataScore.score == "") {
+    return <div></div>;
+  }
   return (
-    <div
-      className={
-        "card text-white bg-sky-700 shadow-2xl border-sky-800 rounded " +
-        dataScore.color
-      }
-    >
+    <div className={`card text-white shadow-2xl  rounded ${dataScore.color}`}>
       <h1>
         <span className="font-semibold">Anda Memilih variabel :</span>{" "}
         {dataScore.pilihan}

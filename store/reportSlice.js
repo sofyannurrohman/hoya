@@ -61,7 +61,7 @@ const reportSlice = createSlice({
         score: "",
         name: "",
         solution: "",
-        color: "bg-orange-500",
+        color: "bg-white-500",
         pilihan: "Silahkan melakukan pengkajian",
       };
     },
