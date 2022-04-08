@@ -56,89 +56,85 @@ export default function Index() {
         </div>
 
         <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
-          <div className="bg-white w-fit py-8 px-6 shadow rounded-lg sm:px-10">
+          <div className="grid grid-cols-1  bg-white w-fit py-8 px-6 shadow rounded-lg sm:px-10">
             <form className="mb-0 space-y-5" onSubmit={addReport} method="POST">
               <div>
-                <div className="flex mt-1 ">
-                  <div>
-                    <label className="block text-lg font-medium text-gray-700 mb-2">
-                      Nama Pasien :
-                    </label>
-                    <input
-                      id="name"
-                      name="name"
-                      type="text"
-                      required
-                      className="border-solid p-1 border-2 border-indigo-600 rounded-md"
-                    />
-                  </div>
-                  <div className="ml-8">
-                    <label className="block text-lg font-medium text-gray-700 mb-2">
-                      Tanggal Pemeriksaan :
-                    </label>
-                    <input
-                      id="tglPeriksa"
-                      name="tglPerisksa"
-                      type="datetime-local"
-                      label="Tanggal Pemeriksaan"
-                      required
-                      className="border-solid p-1 text-gray-900 border-2 border-indigo-600 rounded-md"
-                    />
-                  </div>
+                <label className="block w-full text-lg font-medium text-gray-700 mb-2">
+                  Nama Pasien :
+                </label>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  required
+                  className="border-solid p-1 border-2 border-indigo-600 rounded-md"
+                />
+              </div>
+              <div>
+                <label className="flex w-full text-lg font-medium text-gray-700 mb-2">
+                  Tanggal Pemeriksaan:
+                </label>
+                <input
+                  id="tglPeriksa"
+                  name="tglPerisksa"
+                  type="datetime-local"
+                  label="Tanggal Pemeriksaan"
+                  required
+                  className="border-solid p-1 text-gray-900 border-2 border-indigo-600 rounded-md"
+                />
+              </div>
+              <div className="mt-1 ">
+                <div>
+                  <label className="block text-lg font-medium text-gray-700 mb-2">
+                    No. RM :
+                  </label>
+                  <input
+                    id="noRM"
+                    name="noRM"
+                    type="text"
+                    label="No. RM"
+                    required
+                    className="border-solid p-1 text-gray-900 border-2 border-indigo-600 rounded-md"
+                  />
                 </div>
-                <div className="flex mt-1 ">
-                  <div>
-                    <label className="block text-lg font-medium text-gray-700 mb-2">
-                      No. RM :
-                    </label>
-                    <input
-                      id="noRM"
-                      name="noRM"
-                      type="text"
-                      label="No. RM"
-                      required
-                      className="border-solid p-1 text-gray-900 border-2 border-indigo-600 rounded-md"
-                    />
-                  </div>
-                  <div className="ml-8">
-                    <label className="block text-lg font-medium text-gray-700 mb-2">
-                      Tanggal Lahir :
-                    </label>
-                    <input
-                      id="tglLahir"
-                      name="tglLahir"
-                      type="date"
-                      required
-                      className="border-solid p-1 border-2 border-indigo-600 rounded-md"
-                    />
-                  </div>
+                <div className="">
+                  <label className="block text-lg font-medium text-gray-700 mb-2">
+                    Tanggal Lahir :
+                  </label>
+                  <input
+                    id="tglLahir"
+                    name="tglLahir"
+                    type="date"
+                    required
+                    className="border-solid p-1 border-2 border-indigo-600 rounded-md"
+                  />
                 </div>
-                <div className="flex mt-1 ">
-                  <div>
-                    <label className="block text-lg font-medium text-gray-700 mb-2">
-                      Jenis Kelamin :
-                    </label>
-                    <input
-                      id="gender"
-                      name="gender"
-                      type="text"
-                      label="Jenis Kelamin"
-                      required
-                      className="border-solid p-1 text-gray-900 border-2 border-indigo-600 rounded-md"
-                    />
-                  </div>
-                  <div className="ml-8">
-                    <label className="block text-lg font-medium text-gray-700 mb-2">
-                      Tanggal Pemasangan Infus :
-                    </label>
-                    <input
-                      id="tglInfux"
-                      name="tglInfus"
-                      type="datetime-local"
-                      required
-                      className="border-solid p-1 border-2 border-indigo-600 rounded-md"
-                    />
-                  </div>
+              </div>
+              <div className="mt-1 ">
+                <div>
+                  <label className="block text-lg font-medium text-gray-700 mb-2">
+                    Jenis Kelamin :
+                  </label>
+                  <input
+                    id="gender"
+                    name="gender"
+                    type="text"
+                    label="Jenis Kelamin"
+                    required
+                    className="border-solid p-1 text-gray-900 border-2 border-indigo-600 rounded-md"
+                  />
+                </div>
+                <div className="">
+                  <label className="block text-lg font-medium text-gray-700 mb-2">
+                    Tanggal Pemasangan Infus :
+                  </label>
+                  <input
+                    id="tglInfux"
+                    name="tglInfus"
+                    type="datetime-local"
+                    required
+                    className="border-solid p-1 border-2 border-indigo-600 rounded-md"
+                  />
                 </div>
               </div>
 
@@ -229,7 +225,7 @@ export default function Index() {
                   <button
                     onClick={reset}
                     type="reset"
-                    className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-red-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 ml-10"
+                    className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-red-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 xs:ml-5 "
                   >
                     Ulangi Jawaban
                   </button>

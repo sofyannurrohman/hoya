@@ -5,23 +5,40 @@ function index() {
   return (
     <section className="min-w-full" id="#home">
       <div className="bg-blue-500 pb-10">
-        <div className="container mx-auto px-10 2xl:px-0">
+        <div className="mx-auto px-10 2xl:px-0">
           <Navbar />
-          <div className="flex w-full h-fit text-center xl:mt-8 lg:mt-8 md:mt-6 flex-row space-x-10 justify-items-center">
-            <div className="h-fit mx-auto 2xl:px-0 my-auto">
-              <h1 className="sm:text-xl md:text-3xl w-full text-white font-semibold font-mono 2xl:w-6/12 xl:w-8/12 lg:w-10/12 sm:text-left lg:text-center mx-auto leading-relaxed">
+          <div className="grid grid-cols-1 md:grid-cols-2 ">
+            <div className="mx-auto flex flex-col items-center my-auto">
+              <h1 className="xs:text-center sm:text-lg sm:mt-10 sm:text-center md:text-xl lg:text-3xl w-full text-white font-semibold font-mono 2xl:w-6/12 xl:w-8/12 lg:w-10/12 text-left mx-auto leading-relaxed">
                 Pengkajian Phlebitis pada Pasien Rawat Inap dengan VIP Score
               </h1>
-              <p className="text-white text-2xl 2xl:w-4/12 xl:w-4/12 lg:w-full mt-3 mx-auto leading-relaxed">
+              <p className="text-white sm:text-md md:text-lg text-left lg:text-xl mt-3 leading-relaxed">
                 (Visual Infusion Phlebitis)
               </p>
-              <Button href="#detail" pill variant="blue" className="mt-10">
+              <Button
+                className=" xs:hidden sm:hidden md:flex lg:flex mx-auto flex mt-8"
+                href="#detail"
+                pill
+                variant="blue"
+              >
                 Apa Itu VIP
               </Button>
             </div>
-            <div className="sm:w-16 md:w-7/12  w-full px-10">
-              <img className="w-full" src="/assets/illus-2.png" alt="" />
+            <div className="w-3/4 sm:m-20 md:m-0 lg:m-0">
+              <img
+                className="xs:w-3/4 xs:mx-auto xs:my-auto xs:ml-16 sm:w-3/4 sm:m-10 sm:mt-5  md:w-full lg:w-full"
+                src="/assets/illus-2.png"
+                alt="image-illus"
+              />
             </div>
+            <Button
+              className="md:hidden lg:hidden mx-auto flex mt-8"
+              href="#detail"
+              pill
+              variant="blue"
+            >
+              Apa Itu VIP
+            </Button>
           </div>
         </div>
       </div>
