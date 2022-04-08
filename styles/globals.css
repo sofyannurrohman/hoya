@@ -5,8 +5,8 @@
 @layer components {
   .card {
     background-color: #b20600;
-    border-radius: theme("borderRadius.lg");
-    padding: theme("spacing.6");
+    border-radius: theme("borderRadius.md");
+    padding: 1rem;
     box-shadow: theme("boxShadow.xl");
   }
 }

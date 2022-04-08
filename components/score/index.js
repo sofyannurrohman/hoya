@@ -6,14 +6,12 @@ export default function Index() {
   return (
     <div
       className={
-        "card w-full text-white  bg-sky-700 shadow-2xl border-sky-800 rounded " +
+        "card text-white bg-sky-700 shadow-2xl border-sky-800 rounded " +
         dataScore.color
       }
     >
       <h1>
-        <span className="font-semibold">
-          Tn/Ny SDA, Anda Memilih variabel :
-        </span>{" "}
+        <span className="font-semibold">Anda Memilih variabel :</span>{" "}
         {dataScore.pilihan}
       </h1>
       <h1>

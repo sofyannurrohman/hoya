@@ -10,7 +10,7 @@ export default function Home() {
     <div>
       <Head>
         <title>Pengkajian Phlebitis</title>
-        <meta property="og:title" content="My page title" key="title" />
+        <meta property="og:title" content="Pengkajian Phlebitis" key="title" />
       </Head>
       <Hero />
       <Detail />

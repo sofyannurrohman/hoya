@@ -57,7 +57,7 @@ export default function Index() {
 
         <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
           <div className="bg-white w-fit py-8 px-6 shadow rounded-lg sm:px-10">
-            <form className="mb-0 space-y-6" onSubmit={addReport} method="POST">
+            <form className="mb-0 space-y-5" onSubmit={addReport} method="POST">
               <div>
                 <div className="flex mt-1 ">
                   <div>
@@ -82,7 +82,7 @@ export default function Index() {
                       type="datetime-local"
                       label="Tanggal Pemeriksaan"
                       required
-                      className="border-solid p-1 px-8 text-gray-900 border-2 border-indigo-600 rounded-md"
+                      className="border-solid p-1 text-gray-900 border-2 border-indigo-600 rounded-md"
                     />
                   </div>
                 </div>
@@ -109,7 +109,7 @@ export default function Index() {
                       name="tglLahir"
                       type="date"
                       required
-                      className="border-solid p-1 px-8 border-2 border-indigo-600 rounded-md"
+                      className="border-solid p-1 border-2 border-indigo-600 rounded-md"
                     />
                   </div>
                 </div>
@@ -136,7 +136,7 @@ export default function Index() {
                       name="tglInfus"
                       type="datetime-local"
                       required
-                      className="border-solid p-1 px-8 border-2 border-indigo-600 rounded-md"
+                      className="border-solid p-1 border-2 border-indigo-600 rounded-md"
                     />
                   </div>
                 </div>
