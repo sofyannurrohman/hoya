@@ -170,7 +170,7 @@ export default function Index() {
                 className="w-5 h-5"
               />
               <label
-                className="ml-2 block text-md text-gray-900"
+                className="ml-2 block w-fit text-base text-gray-900"
                 htmlFor="opsi2"
               >
                 (2) Sedikit nyeri dekat tempat suntikan (IV site)
@@ -183,7 +183,7 @@ export default function Index() {
                 type="checkbox"
                 className="w-5 h-5"
               />
-              <label className="ml-2 block text-md text-gray-900">
+              <label className="ml-2 block w-fit text-md text-gray-900">
                 (3) Sedikit eritema/kemerahan pada tempat suntikan
               </label>
             </div>
