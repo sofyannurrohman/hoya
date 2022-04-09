@@ -73,7 +73,7 @@ export default function Index() {
                 type="text"
                 placeholder="Masukkan nama Anda"
                 required
-                className="border-solid p-1 w-full border-2 border-indigo-600 rounded-md"
+                className="border-solid py-2 px-3 p-1 w-full border-2 border-indigo-600 rounded-md"
               />
             </div>
             <div>
@@ -87,7 +87,7 @@ export default function Index() {
                 label="Tanggal Pemeriksaan"
                 placeholder="Masukkan tanggal pemeriksaan"
                 required
-                className="border-solid p-1 bg-white w-full text-gray-900 border-2 border-indigo-600 rounded-md"
+                className="border-solid py-2 px-3 p-1 bg-white w-full text-gray-900 border-2 border-indigo-600 rounded-md"
               />
             </div>
             <div>
@@ -101,7 +101,7 @@ export default function Index() {
                 label="No. RM"
                 placeholder="Masukkan No.RM"
                 required
-                className="border-solid p-1 w-full text-gray-900 border-2 border-indigo-600 rounded-md"
+                className="border-solid py-2 px-3 p-1 w-full text-gray-900 border-2 border-indigo-600 rounded-md"
               />
             </div>
             <div>
@@ -113,7 +113,7 @@ export default function Index() {
                 name="tglLahir"
                 type="date"
                 required
-                className="border-solid bg-white p-1 w-full border-2 border-indigo-600 rounded-md"
+                className="border-solid py-2 px-3 bg-white p-1 w-full border-2 border-indigo-600 rounded-md"
               />
             </div>
 
@@ -128,7 +128,7 @@ export default function Index() {
                 label="Jenis Kelamin"
                 placeholder="Masukkan jenis kelamin"
                 required
-                className="border-solid p-1 w-full text-gray-900 border-2 border-indigo-600 rounded-md"
+                className="border-solid py-2 px-3 w-full text-gray-900 border-2 border-indigo-600 rounded-md"
               />
             </div>
             <div>
@@ -140,7 +140,7 @@ export default function Index() {
                 name="tglInfus"
                 type="datetime-local"
                 required
-                className="border-solid bg-white p-1 w-full border-2 border-indigo-600 rounded-md"
+                className="border-solid py-2 px-3 bg-white p-1 w-full border-2 border-indigo-600 rounded-md"
               />
             </div>
 
