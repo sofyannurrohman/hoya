@@ -71,6 +71,7 @@ export default function Index() {
                 id="name"
                 name="name"
                 type="text"
+                placeholder="Masukkan nama Anda"
                 required
                 className="border-solid p-1 w-full border-2 border-indigo-600 rounded-md"
               />
@@ -84,6 +85,7 @@ export default function Index() {
                 name="tglPerisksa"
                 type="datetime-local"
                 label="Tanggal Pemeriksaan"
+                placeholder="Masukkan tanggal pemeriksaan"
                 required
                 className="border-solid p-1 w-full text-gray-900 border-2 border-indigo-600 rounded-md"
               />
@@ -97,6 +99,7 @@ export default function Index() {
                 name="noRM"
                 type="text"
                 label="No. RM"
+                placeholder="Masukkan No.RM"
                 required
                 className="border-solid p-1 w-full text-gray-900 border-2 border-indigo-600 rounded-md"
               />
@@ -123,6 +126,7 @@ export default function Index() {
                 name="gender"
                 type="text"
                 label="Jenis Kelamin"
+                placeholder="Masukkan jenis kelamin"
                 required
                 className="border-solid p-1 w-full text-gray-900 border-2 border-indigo-600 rounded-md"
               />
@@ -267,7 +271,7 @@ export default function Index() {
               <div className="mt-5">
                 <button
                   type="submit"
-                  className="w-fit flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                  className="w-fit flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-600 hover:bg-indigo-700 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                 >
                   Kirim Jawaban
                 </button>
@@ -277,7 +281,7 @@ export default function Index() {
                 <button
                   onClick={reset}
                   type="reset"
-                  className="w-fit ml-10 flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-red-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 xs-ml-5"
+                  className="w-fit ml-10 flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-red-600 hover:bg-indigo-700 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 xs-ml-5"
                 >
                   Ulangi Jawaban
                 </button>

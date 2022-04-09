@@ -2,7 +2,7 @@ import React from "react";
 import SectionTitle from "../SectionTitle";
 function index() {
   return (
-    <section className="py-16" id="detail">
+    <section className="py-28 mt-8" id="detail">
       <div className="container mx-auto px-10 2xl:px-0">
         <SectionTitle>VIP (Visual Infusion Phlebitis) Score.</SectionTitle>
 
@@ -32,7 +32,7 @@ function index() {
         </div>
       </div>
       <img
-        className="px-10 sm:hidden md:hidden mt-4"
+        className="px-5 sm:hidden md:hidden mt-4"
         src="/assets/vipscore1.jpg"
       />
     </section>

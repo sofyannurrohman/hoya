@@ -7,7 +7,7 @@ import Head from "next/head";
 
 export default function Home() {
   return (
-    <div>
+    <div className="scroll-smooth">
       <Head>
         <title>Pengkajian Phlebitis</title>
         <meta property="og:title" content="Pengkajian Phlebitis" key="title" />
