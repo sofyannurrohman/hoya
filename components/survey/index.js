@@ -87,7 +87,7 @@ export default function Index() {
                 label="Tanggal Pemeriksaan"
                 placeholder="Masukkan tanggal pemeriksaan"
                 required
-                className="border-solid p-1 w-full text-gray-900 border-2 border-indigo-600 rounded-md"
+                className="border-solid p-1 bg-white w-full text-gray-900 border-2 border-indigo-600 rounded-md"
               />
             </div>
             <div>
@@ -113,7 +113,7 @@ export default function Index() {
                 name="tglLahir"
                 type="date"
                 required
-                className="border-solid p-1 w-full border-2 border-indigo-600 rounded-md"
+                className="border-solid bg-white p-1 w-full border-2 border-indigo-600 rounded-md"
               />
             </div>
 
@@ -140,7 +140,7 @@ export default function Index() {
                 name="tglInfus"
                 type="datetime-local"
                 required
-                className="border-solid p-1 w-full border-2 border-indigo-600 rounded-md"
+                className="border-solid bg-white p-1 w-full border-2 border-indigo-600 rounded-md"
               />
             </div>
 
@@ -156,7 +156,7 @@ export default function Index() {
                 className="w-5 h-5"
               />
               <label
-                className="ml-2 block text-md text-gray-900"
+                className="ml-2  block w-fit text-md text-gray-900"
                 htmlFor="opsi1"
               >
                 (1) Tempat suntikan tampak sehat
@@ -194,7 +194,7 @@ export default function Index() {
                 type="checkbox"
                 className="w-5 h-5"
               />
-              <label className="ml-2 block text-md text-gray-900">
+              <label className="ml-2 w-fit block text-md text-gray-900">
                 (4) Nyeri dekat IV site
               </label>
             </div>
@@ -205,7 +205,7 @@ export default function Index() {
                 type="checkbox"
                 className="w-5 h-5"
               />
-              <label className="ml-2 block text-md text-gray-900">
+              <label className="ml-2 w-fit block text-md text-gray-900">
                 (5) Kemerahan
               </label>
             </div>
@@ -216,7 +216,7 @@ export default function Index() {
                 type="checkbox"
                 className="w-5 h-5"
               />
-              <label className="ml-2 block text-md text-gray-900">
+              <label className="ml-2 w-fit block text-md text-gray-900">
                 (6) Bengkak
               </label>
             </div>
@@ -238,7 +238,7 @@ export default function Index() {
                 type="checkbox"
                 className="w-5 h-5"
               />
-              <label className="ml-2 block text-md text-gray-900">
+              <label className="ml-2 w-fit block text-md text-gray-900">
                 (8) Pengerasan (indurasi)
               </label>
             </div>
@@ -249,7 +249,7 @@ export default function Index() {
                 type="checkbox"
                 className="w-5 h-5"
               />
-              <label className="ml-2 block text-md text-gray-900">
+              <label className="ml-2 w-fit block text-md text-gray-900">
                 (9) Vena cord teraba mengeras
               </label>
             </div>
@@ -260,7 +260,7 @@ export default function Index() {
                 type="checkbox"
                 className="w-5 h-5"
               />
-              <label className="ml-2 block text-md text-gray-900">
+              <label className="ml-2 w-fit block text-md text-gray-900">
                 (10) Demam
               </label>
             </div>

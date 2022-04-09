@@ -17,7 +17,7 @@ function index() {
             />
           </div>
           <div className="xs:w-fit sm:w-fit md:w-6/12 ">
-            <p className="flex text-base leading-relaxed font-semibold text-gray-700 italic">
+            <p className="flex text-base leading-relaxed font-semibold text-gray-700 mb-4 italic">
               VIP Score merupakan skala visual plebitis yang digunakan untuk
               mendeteksi dini terjadinya plebitis dan penentuan yang tepat untuk
               skor plebitis, melalui pengamatan visual yang dilakukan oleh
@@ -26,14 +26,14 @@ function index() {
               Rotherham, NHS Trustt.
             </p>
             <img
-              className="xs:hidden sm:flex sm:max-w-fit md:w-full lg:w-full mt-4"
+              className="xs:hidden sm:flex sm:max-w-fit md:w-full lg:w-full"
               src="/assets/vipscore1.jpg"
             />
           </div>
         </div>
       </div>
       <img
-        className="px-1 w-full h-full sm:hidden md:hidden mt-4"
+        className="px-1 w-full xs:h-96 sm:hidden md:hidden mt-4"
         src="/assets/vipscore1.jpg"
       />
     </section>
