@@ -3,7 +3,7 @@ import Navbar from "../Navbar";
 import Button from "../button";
 function index() {
   return (
-    <section className="min-w-full h-screen" id="#home">
+    <section className="min-w-full" id="#home">
       <div className="snap-y snap-mandatory bg-blue-500 pb-10">
         <div className="mx-auto px-10 2xl:px-0">
           <Navbar />

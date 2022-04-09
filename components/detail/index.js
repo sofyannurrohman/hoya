@@ -2,9 +2,11 @@ import React from "react";
 import SectionTitle from "../SectionTitle";
 function index() {
   return (
-    <section className="py-10" id="detail">
+    <section className="py-10 md:mt-10" id="detail">
       <div className="container mx-auto px-10 2xl:px-0">
-        <SectionTitle>VIP (Visual Infusion Phlebitis) Score.</SectionTitle>
+        <h1 className=" text-center font-extrabold text-blue-700 xs:text-md sm:text-lg md:text-2xl  ">
+          VIP (Visual Infusion Phlebitis) Score.
+        </h1>
 
         <div className="flex h-full md:items-start flex-wrap xl:w-9/12 mx-auto mt-10">
           <div className="md:w-6/12 h-fit  w-full px-10 mb-10 md:mb-0">
