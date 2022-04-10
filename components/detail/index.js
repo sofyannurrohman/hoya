@@ -26,14 +26,14 @@ function index() {
               Rotherham, NHS Trustt.
             </p>
             <img
-              className="xs:hidden sm:flex sm:max-w-fit md:w-full md:h-full lg:w-full lg:h-[700px]"
+              className="xs:hidden sm:flex sm:max-w-fit md:hidden lg:flex lg:w-full lg:h-[550px]"
               src="/assets/vipscore1.jpg"
             />
           </div>
         </div>
       </div>
       <img
-        className="px-1 w-full xs:h-96 sm:hidden md:hidden mt-4"
+        className="px-1 w-full xs:h-96 sm:hidden md:flex md:w-full md:h-full lg:hidden mt-4"
         src="/assets/vipscore1.jpg"
       />
     </section>
