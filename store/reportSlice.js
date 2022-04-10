@@ -51,7 +51,7 @@ const reportSlice = createSlice({
           body: JSON.stringify(json),
         };
         fetch(
-          "https://script.google.com/macros/s/AKfycbwFiersem32UzLe_ylvpvdp5YsxPg61MLAUWc3IoAs4Z_Pi48rHp4OTVhfz52zyrvhu/exec?action=addReport",
+          "https://script.google.com/macros/s/AKfycby9rtjOZULomgs2wn2oXbnf5KO0NAs5a9Gk0yV1qSaysxUwu44u-DkRr6V6_WKzAujMew/exec?action=addReport",
           requestOptions
         ).then((response) => console.log(response));
       }
