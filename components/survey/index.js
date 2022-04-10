@@ -100,6 +100,7 @@ export default function Index() {
                 type="text"
                 label="No. RM"
                 placeholder="Masukkan No.RM"
+                maxLength="8"
                 required
                 className="border-solid py-2 px-3 p-1 w-full text-gray-900 border-2 border-indigo-600 rounded-md"
               />
